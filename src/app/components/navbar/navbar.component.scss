@@ -1,0 +1,33 @@
+
+.is-fluid,.container,.navbar{
+    z-index:1000;
+    background:#fff !important;
+        margin-left:0;
+        margin-right:0;
+}
+@media screen and (min-width:1024px) {
+    .is-fluid,.container,.navbar{
+
+        padding-left:2rem;
+
+    }
+}
+@media screen and (max-width:1024px) {
+    .navbar-menu{
+        position: absolute;
+        display: block;
+
+        transition: all .3s;
+        transform:translateY(-400px);
+        z-index:1000;
+        &.is-active{
+            display: block;
+            position: relative;
+            transition: all .5s;
+            transform:translateY(0px);
+            z-index:1000;
+
+        }
+    }
+
+}
